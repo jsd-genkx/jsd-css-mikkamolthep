@@ -28,7 +28,7 @@ body {
 	grid-template-columns: 30ch 1fr; /*กำหนดอัตราส่วนพื้นที่จามขนาดหน้าจอ*/
 	grid-template-areas:
 		"header header"
-		"main main"
+		"aside main"
 		"footer footer"; /*กำหนดพื้นที่แต่ละส่วนให้เป็นของใคร*/
 }
 
@@ -38,7 +38,7 @@ section {
 
 .story {
 	display: none;
-}
+} 
 
 .testimonial {
 	display: none;
@@ -62,7 +62,7 @@ main {
 aside {
 	color: var(--color-white);
 	background-color: var(--color-black);
-  display: none;
+  /* display: none; */
 
 	grid-area: aside; 
 } /*กำหนดพื้นที่ aside อยู่ตรงนี้*/
