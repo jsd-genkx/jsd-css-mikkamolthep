@@ -23,13 +23,13 @@ body {
 .container {
 	width: 100%;
 	min-height: 100dvh;
-	/* display: grid; */
-	/* grid-template-rows: auto 1fr auto; */
-	/* grid-template-columns: 30ch 1fr; */
-	/* grid-template-areas:
+	display: grid;
+	grid-template-rows: auto 1fr auto; /*กำหนดอัตราส่วนพื้นที่จามขนาดหน้าจอ*/
+	grid-template-columns: 30ch 1fr; /*กำหนดอัตราส่วนพื้นที่จามขนาดหน้าจอ*/
+	grid-template-areas:
 		"header header"
 		"main main"
-		"footer footer"; */
+		"footer footer"; /*กำหนดพื้นที่แต่ละส่วนให้เป็นของใคร*/
 }
 
 section {
@@ -40,32 +40,36 @@ section {
 	display: none;
 }
 
+.testimonial {
+	display: none;
+}
+
 header {
 	height: var(--nav-height);
 	background-color: var(--color-primary);
 	color: var(--color-white);
 
-	/* grid-area: header; */
-}
+	grid-area: header;
+} /*กำหนดพื้นที่ header อยู่ตรงนี้*/
 
 main {
 	color: var(--color-black);
 	background-color: var(--color-accent);
 
-	/* grid-area: main; */
-}
+	grid-area: main;
+} /*กำหนดพื้นที่ main อยู่ตรงนี้*/
 
 aside {
 	color: var(--color-white);
 	background-color: var(--color-black);
   display: none;
 
-	/* grid-area: aside; */
-}
+	grid-area: aside; 
+} /*กำหนดพื้นที่ aside อยู่ตรงนี้*/
 
 footer {
 	background-color: var(--color-secondary);
 	color: var(--color-white);
 
-	/* grid-area: footer; */
-}
+	grid-area: footer; 
+} /* กำหนดพื้นที่ footer อยู่ตรงนี้ */
