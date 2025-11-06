@@ -25,13 +25,17 @@ body {
 	background-color: var(--color-accent);
 	width: 100%;
 	min-height: 100dvh;
+	/* outline: 15px solid var(--color-black); */
 
 	display: flex;
-	/* gap: 1rem; */
-	/* justify-content: center; */
-	/* align-items: center; */
+	gap: 1rem;
+	justify-content: center;
+	/* -- เคลื่อนที่แนวนอน ซ้าย-ขวา-- */
+	align-items: center;
+	/* -- เคลื่อนที่แนวตั้ง บน-ล่าง -- */
 	/* align-content: center; */
-	/* flex-wrap: wrap; */
+	/* -- ทำให้ content โดยรวม อยู่ตรงกลาง ที่ gap เท่าๆกัน--*/
+	flex-wrap: wrap;
 
 	/* flex-direction: column; */
 	/* height: 90vh; */
@@ -39,19 +43,25 @@ body {
 
 .box {
 	width: 200px;
-	aspect-ratio: 1;
+	/* aspect-ratio: 1; */
+	/* -- ทำให้เป็นสีเหลี่ยมจัตุรัส --*/
 	font-size: 2rem;
 	background-color: var(--color-primary);
 	color: var(--color-white);
 	border: solid var(--color-white) 5px;
 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*-- 3บรรทัดนี้ใช้ตัวเลขอยู่ตรงกลางกล่อง --*/
+
 	/* flex-shrink: 1;
 	flex-grow: 0;
 	flex-basis: 300px; */
 
-	/* flex:1; */
+	flex:1;
 }
 
-/* .box3 {
-	flex:555;
-} */
+.box1,.box4{
+	flex:2;
+}

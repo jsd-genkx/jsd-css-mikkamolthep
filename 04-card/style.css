@@ -18,4 +18,125 @@
 
 body {
 	font-family: var(--font-sans), serif;
+	text-align: center;
+	background-image:url(https://www.teahub.io/photos/full/229-2290417_background-yu-gi-oh.jpg);
+	/* background-image: url(bg.jpg); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* opacity: 0.3; */
+}
+
+h1{
+	display: inline-block;
+	/* text-align: center; */
+	/* margin: 10px 30px; */
+	/* background: #000; */
+	padding: 12px 20px;
+	margin-top:7px ;
+	border-radius: 9999999px;
+	background: linear-gradient(45deg,rgb(161, 157, 157),rgb(143, 99, 99),rgb(110, 12, 12));
+}
+
+.wrapper {
+	/* display: grid; */
+	/* grid-template-columns: repeat(3,1fr); */
+	/* justify-items: center; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	/* align-content: center; */
+	gap: 30px;
+	margin: 25px auto;
+	/* padding: 20px; */
+
+	/* outline: solid rebeccapurple; */
+	max-width: 1320px;
+	width: 80%;
+}
+
+.container {
+	background-color: #7b7d83;
+	/* width: 100%; */
+	width: 380px;
+	/* height: 100dvh; */
+	padding: 15px;
+	border-radius: 7px;
+}
+
+.container:hover {
+	transform: scale(1.05);
+	transition: 0.3s;
+}
+
+h2{
+	border: 1px solid #aaadad;
+	box-shadow: 2px 2px 3px black,-2px -2px 5px rgb(255, 255, 255);
+	
+	padding: 5px;
+	border-radius: 5px;
+}
+
+h2,.stars{
+	font-size: 1.1em;
+}
+
+h3{
+	font-size: 1em;
+}
+
+.detail p{
+	font-size: 12px;
+	/* font-weight: bolder; */
+	padding-top: 7px;
+	text-align: start;
+}
+
+h1,h2,h3{
+	text-transform: uppercase;
+}
+
+.card {
+  background: radial-gradient(circle, #ffcc00, #9e7220, #97adb8);
+	/* background-color: #a78c49; */
+	border: 2.5px solid black;
+	box-shadow: 0 0 25px black;
+	/* border-radius: 7px; */
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+#head{
+background: radial-gradient(circle, #a07373, #f56e00e0, #fadcc4);
+
+}
+.stars {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	font-size: 1.5rem;
+	/* color: peru; */
+	/* padding-right: 25px; */
+}
+
+
+img{
+	width: 90%;
+	text-align: center;
+	border: 7px solid #5C7284;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+hr{
+	margin-top: 25px;
+}
+
+#power{
+	text-align: end;
+	font-weight: bold;
+	padding-top: 10px;
 }
